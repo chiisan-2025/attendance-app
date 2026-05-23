@@ -16,7 +16,7 @@
 
 ### ① リポジトリクローン
 ```bash
-git clone git clone git@github.com:chiisan-2025/attendance-app.git
+git clone git@github.com:chiisan-2025/attendance-app.git
 cd attendance-app
 ```
 ### ② Docker起動
@@ -33,7 +33,11 @@ php artisan migrate
 ```
 
 ## アクセス
+アプリ
 http://localhost
+
+Mailhog
+http://localhost:8025
 
 ## 使用技術
 -	Laravel
@@ -66,7 +70,7 @@ http://localhost:8025
 ## 工夫した点
 
 - 修正申請は承認待ち・承認済みで状態管理し、重複申請を防止しました
-- 複数回の休憩取得に対応し、合計休憩時間を自動計算する処理を実装しました
+- 複数回の休憩取得に対応し、実際の勤務形態を想定して合計休憩時間を自動計算する処理を実装しました
 - 未認証ユーザーは `/email/verify` に遷移するよう制御しました
 - 時刻の前後関係も考慮したバリデーションを実装しました
 ---
