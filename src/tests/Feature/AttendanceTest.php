@@ -298,7 +298,7 @@ class AttendanceTest extends TestCase
 
         $response->assertStatus(200);
 
-        $response->assertSee(today()->toDateString());
+        $response->assertSee(today()->format('m/d'));
         $response->assertSee('09:00');
         $response->assertSee('18:00');
     }
@@ -315,7 +315,7 @@ class AttendanceTest extends TestCase
             ->get('/attendance/list?month=' . $previousMonth);
 
         $response->assertStatus(200);
-        $response->assertSee(now()->subMonth()->format('Y-m'));
+        $response->assertSee(now()->subMonth()->format('Y/m'));
     }
 
     public function test_user_can_view_next_month_attendance_list()
@@ -332,7 +332,7 @@ class AttendanceTest extends TestCase
         $response->assertStatus(200);
 
         $response->assertSee(
-            now()->addMonth()->format('Y-m')
+            now()->addMonth()->format('Y/m')
         );
     }
 
