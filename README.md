@@ -16,7 +16,7 @@
 
 ### ① リポジトリクローン
 ```bash
-git clone （URL）
+git clone git clone git@github.com:chiisan-2025/attendance-app.git
 cd attendance-app
 ```
 ### ② Docker起動
@@ -65,8 +65,6 @@ http://localhost:8025
 
 ## 工夫した点
 
-## 工夫した点
-
 - 修正申請は承認待ち・承認済みで状態管理し、重複申請を防止しました
 - 複数回の休憩取得に対応し、合計休憩時間を自動計算する処理を実装しました
 - 未認証ユーザーは `/email/verify` に遷移するよう制御しました
@@ -74,4 +72,4 @@ http://localhost:8025
 ---
 
 ## ER図
-![ER図](./attendance-app-docs/er.png)
+![ER図](attendance-app-docs/er.png)
