@@ -1,0 +1,527 @@
+body {
+    margin: 0;
+    background: #f1f1f5;
+    color: #000;
+    font-family: sans-serif;
+}
+
+.header {
+    background: #000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.header-logo img {
+    height: 36px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-nav a,
+.header-nav button {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.main {
+    width: 80%;
+    margin: 60px auto;
+}
+
+.page-title {
+    width: 70%;
+    margin: 60px auto 40px;
+    font-size: 36px;
+    font-weight: bold;
+    padding-left: 16px;
+    border-left: 8px solid #000;
+}
+
+.tabs {
+    display: flex;
+    gap: 40px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.tabs a.active {
+    border-bottom: 4px solid #000;
+    padding-bottom: 8px;
+}
+
+.card-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-table th,
+.card-table td {
+    padding: 20px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+}
+
+.card-table th {
+    background: #f8f8f8;
+    font-weight: bold;
+}
+
+.link-detail {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ===== ログイン専用 ===== */
+
+.login-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 100px;
+}
+
+.login-card {
+    width: 680px;
+}
+
+/* タイトル */
+.login-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+/* 入力グループ */
+.form-group {
+    margin-bottom: 40px;
+}
+
+/* ラベル */
+.form-group label {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* 入力欄 */
+.form-group input {
+    width: 100%;
+    height: 56px;
+    padding: 10px 14px;
+    font-size: 22px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* ボタン */
+.btn-login {
+    width: 100%;
+    height: 56px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.date-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: 16px 24px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.date-center {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.date-nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.detail-card {
+    width: 70%;
+    margin: 0 auto 40px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.detail-row {
+    display: flex;
+    align-items: center;
+    min-height: 92px;
+    border-bottom: 1px solid #ddd;
+}
+
+.detail-label {
+    width: 28%;
+    padding-left: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    box-sizing: border-box;
+}
+
+.detail-value {
+    width: 72%;
+    padding: 0 30px;
+    font-size: 28px;
+    font-weight: bold;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.detail-date {
+    justify-content: center;
+    gap: 120px;
+}
+
+.detail-time-range {
+    justify-content: center;
+    gap: 32px;
+}
+
+.time-box {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 92px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.time-separator {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.note-box {
+    width: 220px;
+    min-height: 70px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.detail-action {
+    width: 70%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.btn-detail-edit {
+    width: 180px;
+    height: 56px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.date-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 16px 24px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.date-center {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.date-nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.csv-action {
+    max-width: 1220px;
+    margin: 30px auto 0;
+    text-align: right;
+}
+
+.btn-csv {
+    min-width: 140px;
+    height: 48px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.auth-link-wrap {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.auth-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.auth-link:hover {
+    text-decoration: underline;
+}
+
+.attendance-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.status-badge {
+    background: #eee;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.attendance-date {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.attendance-time {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 12px 40px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+.attendance-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.status-badge {
+    background: #e0e0e0;
+    color: #666;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 999px;
+    margin-bottom: 30px;
+}
+
+.attendance-date {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.attendance-time {
+    font-size: 84px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.attendance-actions {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.attendance-btn {
+    width: 220px;
+    height: 80px;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.attendance-btn-black {
+    background: #000;
+    color: #fff;
+    border: none;
+}
+
+.attendance-btn-white {
+    background: #fff;
+    color: #000;
+    border: none;
+}
+
+.attendance-message {
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+.pending-message {
+    color: #ff7b7b;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.verify-container {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.verify-box {
+    text-align: center;
+    transform: translateY(-40px);
+}
+
+.verify-text {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+
+.verify-button {
+    display: inline-block;
+    padding: 18px 45px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background: #e5e5e5;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 55px;
+}
+
+.verify-resend {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background: transparent;
+    color: #0073ff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.attendance-list {
+    max-width: 900px;
+    margin: 80px auto;
+}
+
+.attendance-list__title {
+    font-size: 30px;
+    font-weight: bold;
+    border-left: 8px solid #000;
+    padding-left: 18px;
+    margin-bottom: 40px;
+}
+
+.attendance-list__month {
+    background: #fff;
+    border-radius: 8px;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+    font-weight: bold;
+}
+
+.attendance-list__month a {
+    color: #777;
+    text-decoration: none;
+}
+
+.attendance-list__current {
+    font-size: 24px;
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.attendance-table th,
+.attendance-table td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+.attendance-table a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
