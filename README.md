@@ -72,4 +72,4 @@ http://localhost:8025
 ---
 
 ## ER図
-![ER図](https://raw.githubusercontent.com/chiisan-2025/attendance-app/main/attendance-app-docs/er.png)
+![ER図](attendance-app-docs/er.png)
